@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Truck</title>
+    <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -77,7 +78,60 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+            <div class="menu-container">
+                <h2>Menu</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="coffee.jpg" alt="Coffee">
+                        <h3>Coffee</h3>
+                        <p>Price: <span>$3.99</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="sandwich.jpg" alt="Sandwich">
+                        <h3>Sandwich</h3>
+                        <p>Price: <span>$6.99</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="salad.jpg" alt="Salad">
+                        <h3>Salad</h3>
+                        <p>Price: <span>$5.99</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-container">
+                <h2>Order</h2>
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-total">Order Total:</label>
+                        <span id="order-total">$0.00</span>
+                    </div>
+                    <button type="submit" id="order-button">Place Order</button>
+                </form>
+                <div id="order-message"></div>
+            </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2024 Food Truck Business. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
